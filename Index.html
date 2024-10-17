@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS messaround</title>
+</head>
+<body>
+    <h1>Let's learn javascript!</h1>
+    <h2>How do we do onclick events and alerts on an anchor</h2>
+
+    <a href="https://www.youtube.com" target="_blank" onclick="alert('Warning! You are navigating away from the webpage')">Youtube link</a>
+
+    <hr>
+    <h2>How do we display and hide text.</h2>
+    <h2>Whats my secret identity?</h2>
+    <p id="secret"></p>
+    <button onclick="document.getElementById('secret').innerHTML='Sigma';
+    document.getElementById('secret').style.display='block'">Reveal!</button>
+
+    <button onclick="document.getElementById('secret').style.display='none'">Hide</button>
+
+    <h2>How do we change an image with javascript?</h2>
+    <img src="Images/Light bulb.jpg" id="myImage" style="height:200px; width:200px;">
+
+    <button onclick="document.getElementById('myImage').src='Images/light bulb off.jpg'">Bulb off</button>
+
+    <button onclick="document.getElementById('myImage').src='Images/light bulb.jpg'">bulb on</button>
+
+    <h2>How do we change styles with JS?</h2>
+    <p id="sigma">Hi. I am a sigma</p>
+
+    <button onclick="document.getElementById('sigma').style.color='red'; document.getElementById('sigma')">Make it red</button>
+
+    <h2>How to change the background color:</h2>
+
+    <button onclick="document.body.style.backgroundColor = 'grey';">Click here</button>
+
+    <h2>How to align text:</h2>
+
+    <p id="align">Click the button below me and ill go to the center!</p>
+
+    <button onclick="document.getElementById('align').style.textAlign='center'">Click me!</button>
+
+</body>
+</html>
